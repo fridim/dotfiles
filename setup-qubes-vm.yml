@@ -1,0 +1,39 @@
+- hosts: localhost
+  gather_facts: false
+  become: yes
+  tasks:
+  - name: Update packages
+    dnf:
+      name: "*"
+      state: latest
+
+  - name: Install packages
+    dnf:
+      name: "{{ item }}"
+    with_items:
+    - python2-boto3
+    - emacs
+    - chromium
+    - firefox
+    - keepassxc
+    - hexchat
+    #- pidgin
+    #- pidgin-otr
+    - tig
+    - tmux
+    - jq
+    - the_silver_searcher
+    - bind-utils
+    - tar
+    - xsane
+    - rxvt-unicode
+
+  - name: Enable hack-fonts repo
+    command: sudo dnf copr enable -y heliocastro/hack-fonts
+
+  - name: Install hack-fonts
+    dnf:
+      name: hack-fonts
+
+  - name: Enable hack-fonts repo
+    command: sudo dnf copr disable -y heliocastro/hack-fonts
