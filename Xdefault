@@ -1,0 +1,80 @@
+!urxvt*font: xft:Terminus:size=10
+!urxvt*font: xft:DejaVuSansMono for Powerline:size=10
+!URxvt.font: xft:Terminus:pixelsize=12:antialias=false:hinting=true:autohint=false, xft:Terminus (TTF) for Powerline:pixelsize=14:antialias=false:hinting=true:autohint=false 
+!URxvt.boldFont: xft:Terminus:bold:pixelsize=12:antialias=false:hinting=false:autohint=false, xft:Terminus (TTF) for Powerline:bold:pixelsize=14:antialias=false:hinting=false:autohint=false
+!URxvt.font: xft:Source Code Pro:size=12
+!URxvt.boldFont: xft:Source Code Pro:bold:size=12
+
+URxvt*font: xft:Hack:pixelsize=16:antialias=true:hinting=true,xft:Source\ Code\ Pro\ Medium:pixelsize=16:antialias=true:hinting=true
+!URxvt*font: xft:Source\ Code\ Pro\ Medium:pixelsize=15:antialias=true:hinting=true,xft:Source\ Code\ Pro\ Medium:pixelsize=15:antialias=true:hinting=true
+
+
+!URxvt.font: xft:Monospace:pixelsize=11
+!URxvt.boldFont: xft:Monospace:bold:pixelsize=11
+
+urxvt*urgentOnBell:       true
+urxvt*foreground: #f2f2f2
+urxvt*background: #181818
+!URxvt*.transparent: true
+!URxvt.blurRadius: 20x120
+!URxvt*tintColor: #101010
+!URxvt*fadeColor: #101010
+!URxvt*shading: 105
+UXTerm*metaSendsEscape: true
+URxvt*saveLines: 1200000
+URxvt*scrollstyle:plain
+URxvt*scrollBar: false
+URxvt*cursorBlink: true
+URxvt*cursorUnderline: false
+URxvt.keysym.Meta-n:    \alt n
+urxvt*scrollBar: false
+
+! Normal
+! color0    black
+! color1    red
+! color2    green
+! color3    yellow
+! color4    blue
+! color5    purple
+! color6    cyan
+! color7    white
+
+urxvt*color0:    #363636
+urxvt*color1:    #e9897c
+urxvt*color2:    #b6e77d
+urxvt*color3:    #ecebbe
+urxvt*color4:    #4f7ba0
+urxvt*color5:    #ea96eb
+urxvt*color6:    #d1b5ec
+urxvt*color7:    #f2f2f2
+
+! Light
+! color8    black
+! color9    red
+! color10    green
+! color11    yellow
+! color12    blue
+! color13    purple
+! color14    cyan
+! color15    white
+
+urxvt*color8:    #747474
+urxvt*color9:    #f99286
+urxvt*color10:    #c3f786
+urxvt*color11:    #fcfbcc
+urxvt*color12:    #b6defb
+urxvt*color13:    #fba1fb
+urxvt*color14:    #d7d9fc
+urxvt*color15:    #e2e2e2
+
+urxvt.perl-ext:  default,matcher,url-select
+URxvt.perl-ext-common:  font-size
+!urxvt.perl-ext-common:  default,matcher,tabbedex
+urxvt.matcher.button:   1
+urxvt.colorUL: #4682B4
+
+URxvt.keysym.M-u:   perl:url-select:select_next
+URxvt.url-select.launcher:   /usr/bin/firefox -new-tab
+URxvt.url-select.underline: true
+URxvt.keysym.M-i:   perl:font-size:increase
+URxvt.keysym.M-o:   perl:font-size:decrease
